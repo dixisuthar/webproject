@@ -1,0 +1,4 @@
+services:
+  changemakers_newsletter.custom_time:
+    class: Drupal\changemakers_newsletter\Form\ChangemakersNewsletterConfigForm
+    arguments: ['@datetime.time']

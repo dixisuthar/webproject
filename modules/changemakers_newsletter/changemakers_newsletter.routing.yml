@@ -1,0 +1,7 @@
+changemakers_newsletter.config:
+  path: '/admin/config/changemakers/newletter'
+  defaults:
+    _form: '\Drupal\changemakers_newsletter\Form\ChangemakersNewsletterConfigForm'
+    _title: 'Newsletter configuration'
+  requirements:
+    _permission: 'administer custom configuration'
