@@ -1,0 +1,5 @@
+name: Changemakers Newsletter
+description: Custom module to provide date and time of current location.
+package: Changemakers Custom
+type: module
+core_version_requirement: ^8 || ^9

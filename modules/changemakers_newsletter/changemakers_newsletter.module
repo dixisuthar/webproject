@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for customizing drupal functionalities.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function changemakers_newsletter_theme($existing, $type, $theme, $path) {
+
+  return [
+    'block--changemakers-newsletter-block' => [
+      'variables' => [
+        'date' => 'Default title',
+        'city' => NULL,
+        'country' => NULL,
+      ],
+    ],
+  ];
+}
