@@ -1,0 +1,21 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  <div class="container">
+    <div class="row">
+    <h4> {{ time }} </h4>
+    <p> {{ day }} </p>
+    <p> Time in {{ city }} , {{ country }} </p>
+      {% block content %}
+        <div>
+          {{ content }}
+        </div>
+      {% endblock %}
+    </div>
+  </div>
+</div>
