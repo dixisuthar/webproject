@@ -1,0 +1,4 @@
+services:
+  user_timezone.custom_time:
+    class: Drupal\user_timezone\Form\UserTimezoneConfigForm
+    arguments: ['@datetime.time']

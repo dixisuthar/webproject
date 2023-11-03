@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for customizing drupal functionalities.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function user_timezone_theme($existing, $type, $theme, $path) {
+
+  return [
+    'block--user-timezone-block' => [
+      'variables' => [
+        'time' => NULL,
+        'day' => NULL,
+        'city' => NULL,
+        'country' => NULL,
+      ],
+    ],
+  ];
+}
